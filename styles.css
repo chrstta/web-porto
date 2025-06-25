@@ -1,0 +1,319 @@
+:root {
+    --primaryTextColor: #232e35; /* Untuk title atau judul */
+  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #F7F7F7;
+  --thirdBackgroundColor: #f5f3fe;
+
+  --sectionPadding: 6rem 0;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin:auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: gray;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: gray;
+}
+
+.detel p{
+    color: black;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(250, 252, 253);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .background{
+    bottom: 40px;
+}
+
+.images:hover .cca{
+    left: 45%;
+}
+
+/* Burger */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* Services Section */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.pre-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+#service  {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    gap: 30px; /* Menambah jarak antar box */
+    padding: 20px; /* Supaya tidak terlalu mepet ke tepi */
+  }
+  
+  .service {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #ffffff; /* Warna putih untuk setiap box */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+  .service .pre-title {
+    margin: 0 auto;
+  }
+  
+  .service-title {
+    text-align: center;
+  }
+  
+  .service {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+  }
+  
+  .service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+  
+  .service-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .service-icon svg {
+    fill: var(--primaryIconColor);
+  }
+  
+ 
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+} 
+
+/* portfolio */
+#PORTOFOLIO .pre-title,
+#PORTOFOLIO .section-title {
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.portfolio-container {
+  width: 100%;
+}
+
+.portfolio {
+  border-radius: var(--itemBorderRadius);
+  overflow: hidden;
+  border: 1px solid var(--borderColor);
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-cover {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portfolio-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 1.5rem;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-tags div {
+  font-size: 0.85rem;
+  border: 1px solid var(--borderColor);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  color: var(--secondaryTextColor);
+}
+
+.portfolio p {
+  font-size: 0.95rem;
+  color: var(--primaryTextColor);
+}
+
+.skill-section, .contact-section {
+  padding: var(--sectionPadding);
+  text-align: center;
+}
+
+.skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.contact-content {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--secondaryTextColor);
+}
+
+.contact-content a {
+  color: var(--primaryTextColor);
+  text-decoration: none;
+}

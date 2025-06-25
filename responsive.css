@@ -1,0 +1,168 @@
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--primaryBackgroundColor);
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    height: 100vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+  }
+
+  nav.nav-active {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .detel {
+    margin: 3rem 1rem;
+    text-align: center;
+  }
+
+  .detel h1 {
+    font-size: 2rem;
+  }
+
+  .images {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .images img {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .skill-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .skill-item img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--primaryBackgroundColor);
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    height: 100vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+  }
+
+  nav.nav-active {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .detel {
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+
+  .detel h1 {
+    font-size: 2rem;
+  }
+
+  .images {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 2rem auto 0 auto;
+  }
+
+  .images img {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .portfolio {
+    max-width: 100%;
+  }
+
+  .skill-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .skill-item img {
+    width: 60px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .pre-title {
+    font-size: 0.75rem;
+  }
+
+  .portfolio-cover {
+    height: 200px;
+  }
+
+  .portfolio-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
